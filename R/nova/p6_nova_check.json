@@ -1,0 +1,119 @@
+{
+  "fails": [],
+  "report": {
+    "390": {
+      "vw": 390,
+      "scrollW": 390,
+      "ids": [
+        [
+          "cs-brief",
+          1177.265625
+        ],
+        [
+          "cs-role",
+          1664.015625
+        ],
+        [
+          "cs-process",
+          2517.390625
+        ],
+        [
+          "cs-result",
+          3558.765625
+        ],
+        [
+          "cs-features",
+          8842.953125
+        ],
+        [
+          "cs-credits",
+          10595.125
+        ]
+      ],
+      "banned": [],
+      "tagline": true,
+      "imgs": 17,
+      "nonLazy": [
+        "/media/fab/loop-poster.webp"
+      ],
+      "broken": [],
+      "webp": 16,
+      "vids": [
+        {
+          "src": "http://127.0.0.1:4188/media/nova/hero-shatter.mp4",
+          "muted": true,
+          "poster": true
+        },
+        {
+          "src": "/media/nova/story-01.mp4",
+          "muted": true,
+          "poster": true
+        },
+        {
+          "src": "/media/nova/carousel.mp4",
+          "muted": true,
+          "poster": true
+        }
+      ],
+      "wide": [],
+      "consoleErrors": []
+    },
+    "1440": {
+      "vw": 1440,
+      "scrollW": 1440,
+      "ids": [
+        [
+          "cs-brief",
+          1934
+        ],
+        [
+          "cs-role",
+          2360.78125
+        ],
+        [
+          "cs-process",
+          3073.96875
+        ],
+        [
+          "cs-result",
+          4238.125
+        ],
+        [
+          "cs-features",
+          8530.0625
+        ],
+        [
+          "cs-credits",
+          10842.21875
+        ]
+      ],
+      "banned": [],
+      "tagline": true,
+      "imgs": 17,
+      "nonLazy": [
+        "/media/fab/loop-poster.webp"
+      ],
+      "broken": [],
+      "webp": 16,
+      "vids": [
+        {
+          "src": "http://127.0.0.1:4188/media/nova/hero-shatter.mp4",
+          "muted": true,
+          "poster": true
+        },
+        {
+          "src": "/media/nova/story-01.mp4",
+          "muted": true,
+          "poster": true
+        },
+        {
+          "src": "/media/nova/carousel.mp4",
+          "muted": true,
+          "poster": true
+        }
+      ],
+      "wide": [],
+      "consoleErrors": []
+    }
+  }
+}

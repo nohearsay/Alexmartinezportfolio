@@ -1,0 +1,226 @@
+/**
+ * Home — the showreel page.
+ *
+ * SITE P4 rebuild. The old page leaned on a `.display display--lg` pair of
+ * classes that no longer exist and on ad-hoc Tailwind spacing; this one is built
+ * from the token layer only:
+ *
+ *  · one h1 for the route, and it is the hero's (--fs-display, 96/48);
+ *  · every other section heading is a real h2 through SectionHead (--fs-h2,
+ *    48/30), kickers are <p class="eyebrow">;
+ *  · every section is `.section`, so its padding-top is --section-y (96/64) —
+ *    which is what the P4 verifier asserts for `main section`;
+ *  · the manifesto section sits straight after the work rail: HOME.manifesto
+ *    from src/data/cv.ts at --fs-h2 / max-width 680px, its words fading
+ *    30% -> 100% one at a time as the block enters the viewport;
+ *  · "Stills from the renders" is a 1/2/3-column grid of aspect-ratio boxes
+ *    with captions. A still that fails to load removes its own tile, so the
+ *    section can never collapse into a tall empty block.
+ *
+ * Order on the page: hero, approach, work rail, manifesto, frames, about,
+ * contact.
+ */
+import { useEffect, useRef, useState } from 'react'
+import { ShowreelHero } from '../components/ShowreelHero'
+import { WorkRail } from '../components/WorkRail'
+import { SectionHead } from '../components/SectionHead'
+import { About } from '../components/About'
+import { Contact } from '../components/Contact'
+import { useReveals } from '../motion/useReveals'
+import { prefersReducedMotion } from '../motion/motion'
+import { HOME } from '../data/cv'
+
+/**
+ * The manifesto line is HOME.manifesto from src/data/cv.ts; it is split into
+ * one span per word so the lit-up reveal still works. SITE P5: two-tone — the
+ * first sentence stays #FFF, everything after it drops to #8A8A8A.
+ */
+const MANIFESTO_SPLIT = HOME.manifesto.indexOf('. ')
+const MANIFESTO_WORDS = (
+  MANIFESTO_SPLIT === -1 ? HOME.manifesto : HOME.manifesto.slice(0, MANIFESTO_SPLIT + 1)
+).split(' ')
+const MANIFESTO_REST = MANIFESTO_SPLIT === -1 ? [] : HOME.manifesto.slice(MANIFESTO_SPLIT + 2).split(' ')
+
+/**
+ * Manifesto — one word lights at a time.
+ *
+ * An IntersectionObserver, not a scroll listener: the block is observed once at
+ * 30% visibility, then each word is handed an --fs-h2-sized opacity transition
+ * with a 90ms step. Under reduced motion every word is lit immediately, which
+ * is also the state a reader with JS broken sees (the words rest at 30%
+ * opacity in CSS, so the copy is always legible).
+ */
+const Manifesto = () => {
+  const ref = useRef<HTMLHeadingElement>(null)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+
+    const words = Array.from(el.querySelectorAll<HTMLElement>('.manifesto__word'))
+    if (words.length === 0) return
+
+    if (prefersReducedMotion() || typeof IntersectionObserver === 'undefined') {
+      words.forEach((word) => word.classList.add('is-lit'))
+      return
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue
+          words.forEach((word, i) => {
+            word.style.transitionDelay = `${i * 90}ms`
+            word.classList.add('is-lit')
+          })
+          io.disconnect()
+        }
+      },
+      { threshold: 0.3 }
+    )
+
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+
+  return (
+    <section className="section" aria-labelledby="manifesto-title">
+      <div className="shell">
+        <div className="manifesto">
+          <p className="eyebrow reveal">03 — Manifesto</p>
+          <h2 id="manifesto-title" className="manifesto__title">
+            {MANIFESTO_WORDS.map((word, i) => (
+              <span className="manifesto__word" key={`${word}-${i}`}>
+                {word}
+                {i < MANIFESTO_WORDS.length - 1 || MANIFESTO_REST.length > 0 ? ' ' : null}
+              </span>
+            ))}
+            {MANIFESTO_REST.map((word, i) => (
+              <span className="manifesto__word manifesto__word--mute" key={`rest-${word}-${i}`}>
+                {word}
+                {i < MANIFESTO_REST.length - 1 ? ' ' : null}
+              </span>
+            ))}
+          </h2>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/** Frames — the process stills, captioned, in aspect-ratio boxes. */
+const Frames = () => {
+  const [failed, setFailed] = useState<string[]>([])
+
+  const hide = (src: string): void => setFailed((prev) => (prev.includes(src) ? prev : [...prev, src]))
+  const shown = FRAMES.filter((frame) => !failed.includes(frame.src))
+
+  return (
+    <section className="section" aria-labelledby="frames-title" data-cv-exempt>
+      <div className="shell">
+        <SectionHead
+          eyebrow="04 — Frames"
+          id="frames-title"
+          lines={['Stills from', 'the renders.']}
+          lede="Pulled straight from the AURA and NOVA timelines - the process shots that did not make the cut into the loops."
+        />
+
+        <div className="frames">
+          {shown.map((frame) => {
+            // caption is "Scene NN — Title": title left, brand · scene right (R4)
+            const [sceneNo, sceneTitle] = frame.caption.split('—').map((part) => part.trim())
+            return (
+              <figure className="frames__item" key={frame.src} data-brand={frame.brand.toLowerCase()}>
+                <div className="frame frames__media reveal">
+                  <img
+                    className="frame__media"
+                    src={frame.src}
+                    alt={`${frame.title} — ${frame.caption}`}
+                    width={1400}
+                    height={788}
+                    loading="lazy"
+                    decoding="async"
+                    data-parallax="8"
+                    onError={() => hide(frame.src)}
+                  />
+                </div>
+                <figcaption className="frame__caption reveal">
+                  <span className="frame__caption__title">{sceneTitle ?? frame.caption}</span>
+                  <span className="frame__caption__meta">
+                    {frame.brand} · {sceneNo ?? ''}
+                  </span>
+                </figcaption>
+              </figure>
+            )
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export const Home = () => {
+  const rootRef = useRef<HTMLDivElement>(null)
+  useReveals(rootRef)
+
+  return (
+    <div ref={rootRef}>
+      {/* The route's single h1 lives in the hero. */}
+      <ShowreelHero />
+
+      {/* ----------------------------------------------------------- approach */}
+      <section className="section" aria-labelledby="approach-title">
+        <div className="shell">
+          <p className="eyebrow reveal">01 — Approach</p>
+          <div className="intro">
+            <h2 id="approach-title" className="reveal">
+              The site you are scrolling <span className="tone-mute">is the showreel.</span>
+            </h2>
+            <div className="intro__col">
+              <p className="lede reveal" data-cv-exempt>
+                Three end-to-end brands, built from the ground up: brand system, motion language, renders and the code that plays them. Every clip on this page is a real render from the work itself, and the type is a variable font with a live width axis.
+              </p>
+              <p className="lede reveal">{HOME.craftLine}</p>
+            </div>
+          </div>
+        </div>
+
+        {/* SITE P5: the marquee read as filler. It is one static mono line now;
+            the words stay HOME.capabilities verbatim, one span per word so each
+            text node still traces to src/data/cv.ts. */}
+        <p className="caps-line reveal">
+          {HOME.capabilities.map((word, i) => (
+            <span key={word}>
+              <span className="caps-line__item">{word}</span>
+              {i < HOME.capabilities.length - 1 ? (
+                <span className="caps-line__sep" aria-hidden="true">
+                  {' · '}
+                </span>
+              ) : null}
+            </span>
+          ))}
+        </p>
+      </section>
+
+      {/* --------------------------------------------------------- work rail */}
+      <section id="work" className="section" aria-labelledby="work-title">
+        <div className="shell">
+          <SectionHead
+            eyebrow="02 — Selected work"
+            id="work-title"
+            lines={['Three brands.', 'Public case studies.']}
+            lede="Each case study is a proof of concept built with full creative freedom — strategy, motion system, deliverables, and results."
+            exempt
+          />
+        </div>
+        <WorkRail />
+      </section>
+
+      {/* ---------------------------------------------------------- manifesto */}
+            <Manifesto />
+
+            <About />
+            <Contact />
+          </div>
+        )
+      }

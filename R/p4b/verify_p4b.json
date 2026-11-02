@@ -1,0 +1,970 @@
+{
+ "base": "http://127.0.0.1:4188",
+ "when": "Sat Oct 31 2026 13:35:21 GMT-0400 (Venezuela Time)",
+ "fails": [
+  "aura_1440: h1 36 != 56",
+  "aura_1440: padding off grid: 10,14",
+  "aura_390: padding off grid: 10,14"
+ ],
+ "results": [
+  {
+   "sizes": [
+    12,
+    14,
+    16,
+    20,
+    24,
+    40,
+    64
+   ],
+   "weights": [
+    "600",
+    "500",
+    "400",
+    "700"
+   ],
+   "italics": 0,
+   "pads": [
+    0,
+    96,
+    48,
+    4,
+    24,
+    8,
+    16,
+    12
+   ],
+   "gaps": [
+    12,
+    24,
+    8,
+    48,
+    16,
+    64,
+    4
+   ],
+   "h1": [
+    64
+   ],
+   "h2": [
+    40,
+    40,
+    40
+   ],
+   "h3": [
+    23.9984,
+    23.9984,
+    23.9984
+   ],
+   "h1count": 1,
+   "headerH": 64,
+   "navRows": 1,
+   "loaderVisible": false,
+   "secs": [
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96
+   ],
+   "conts": [
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px"
+   ],
+   "heads": [
+    "Visual storytelling and AI workflows",
+    "Three brands. Zero NDAs.",
+    "AURA — Wellness App",
+    "NOVA — AR glasses",
+    "Flesh and Blood Venezuela",
+    "Shot composition, pacing, editorial rhythm.",
+    "Stills from the renders."
+   ],
+   "overflowX": 0,
+   "bgGradients": 0,
+   "h1Info": {
+    "tt": "none",
+    "lines": 2,
+    "lhRatio": 1.05,
+    "hPct": 0.16,
+    "maxW": 578
+   },
+   "firstCardTop": null,
+   "ogImage": true,
+   "aria": 0,
+   "status": 200,
+   "errs": [],
+   "key": "home_1440",
+   "geo": {
+    "overlaps": [],
+    "textOnMedia": [],
+    "clippedX": [],
+    "clippedY": []
+   },
+   "flatBand": 64,
+   "h1Painted": true,
+   "hidden": {
+    "stuck": [],
+    "broken": [],
+    "words": 514
+   }
+  },
+  {
+   "sizes": [
+    12,
+    14,
+    16,
+    20,
+    24,
+    56
+   ],
+   "weights": [
+    "600",
+    "500",
+    "700",
+    "400"
+   ],
+   "italics": 0,
+   "pads": [
+    24,
+    0,
+    96,
+    48,
+    4,
+    16,
+    12,
+    8
+   ],
+   "gaps": [
+    16,
+    8,
+    48,
+    32,
+    12,
+    24,
+    4
+   ],
+   "h1": [
+    56
+   ],
+   "h2": [],
+   "h3": [
+    23.9984,
+    23.9984,
+    23.9984
+   ],
+   "h1count": 1,
+   "headerH": 64,
+   "navRows": 1,
+   "loaderVisible": false,
+   "secs": [
+    96,
+    96
+   ],
+   "conts": [
+    "1280px",
+    "1280px",
+    "1280px"
+   ],
+   "heads": [
+    "Selected work",
+    "AURA",
+    "NOVA",
+    "Flesh and Blood"
+   ],
+   "overflowX": 0,
+   "bgGradients": 0,
+   "h1Info": {
+    "tt": "none",
+    "lines": 1,
+    "lhRatio": 1.1,
+    "hPct": 0.07,
+    "maxW": 1184
+   },
+   "firstCardTop": 440,
+   "ogImage": true,
+   "aria": 1,
+   "status": 200,
+   "errs": [],
+   "key": "work_1440",
+   "geo": {
+    "overlaps": [],
+    "textOnMedia": [],
+    "clippedX": [],
+    "clippedY": []
+   },
+   "flatBand": 46,
+   "h1Painted": true,
+   "hidden": {
+    "stuck": [],
+    "broken": [],
+    "words": 123
+   }
+  },
+  {
+   "sizes": [
+    12,
+    14,
+    16,
+    20,
+    24,
+    36,
+    40
+   ],
+   "weights": [
+    "600",
+    "500",
+    "700",
+    "400"
+   ],
+   "italics": 0,
+   "pads": [
+    24,
+    0,
+    96,
+    48,
+    12,
+    4,
+    8,
+    2,
+    10,
+    14,
+    16
+   ],
+   "gaps": [
+    16,
+    32,
+    12,
+    48,
+    8,
+    24
+   ],
+   "h1": [
+    36
+   ],
+   "h2": [
+    40
+   ],
+   "h3": [
+    23.9984,
+    23.9984,
+    23.9984,
+    23.9984,
+    23.9984,
+    23.9984,
+    23.9984,
+    23.9984,
+    23.9984,
+    23.9984,
+    23.9984
+   ],
+   "h1count": 1,
+   "headerH": 64,
+   "navRows": 1,
+   "loaderVisible": false,
+   "secs": [
+    96,
+    96,
+    96,
+    96,
+    96,
+    96
+   ],
+   "conts": [
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px"
+   ],
+   "heads": [
+    "AURA wellness app",
+    "Problem",
+    "Constraint",
+    "Role",
+    "Tools",
+    "Deliverables",
+    "Decision",
+    "breathe",
+    "focus",
+    "reset",
+    "calm",
+    "Metrics",
+    "Next \\u2014 NOVA AR glasses \\u2192"
+   ],
+   "overflowX": 0,
+   "bgGradients": 0,
+   "h1Info": {
+    "tt": "none",
+    "lines": 2,
+    "lhRatio": 1.1,
+    "hPct": 0.1,
+    "maxW": 216
+   },
+   "firstCardTop": null,
+   "ogImage": true,
+   "aria": 1,
+   "status": 200,
+   "errs": [],
+   "key": "aura_1440",
+   "geo": {
+    "overlaps": [],
+    "textOnMedia": [],
+    "clippedX": [],
+    "clippedY": []
+   },
+   "flatBand": 67,
+   "h1Painted": true,
+   "hidden": {
+    "stuck": [],
+    "broken": [],
+    "words": 258
+   }
+  },
+  {
+   "sizes": [
+    12,
+    14,
+    16,
+    20,
+    24,
+    56
+   ],
+   "weights": [
+    "600",
+    "500",
+    "700",
+    "400"
+   ],
+   "italics": 0,
+   "pads": [
+    96,
+    0,
+    48
+   ],
+   "gaps": [
+    16,
+    24,
+    12,
+    8
+   ],
+   "h1": [
+    56
+   ],
+   "h2": [],
+   "h3": [
+    23.9984
+   ],
+   "h1count": 1,
+   "headerH": 64,
+   "navRows": 1,
+   "loaderVisible": false,
+   "secs": [
+    96
+   ],
+   "conts": [
+    "1280px",
+    "1280px"
+   ],
+   "heads": [
+    "Cinematographer and",
+    "Current toolkit"
+   ],
+   "overflowX": 0,
+   "bgGradients": 0,
+   "h1Info": {
+    "tt": "none",
+    "lines": 1,
+    "lhRatio": 1.1,
+    "hPct": 0.07,
+    "maxW": 1184
+   },
+   "firstCardTop": null,
+   "ogImage": true,
+   "aria": 1,
+   "status": 200,
+   "errs": [],
+   "key": "about_1440",
+   "geo": {
+    "overlaps": [],
+    "textOnMedia": [],
+    "clippedX": [],
+    "clippedY": []
+   },
+   "flatBand": 106,
+   "h1Painted": true,
+   "hidden": {
+    "stuck": [],
+    "broken": [],
+    "words": 113
+   }
+  },
+  {
+   "sizes": [
+    12,
+    14,
+    16,
+    20,
+    24,
+    40,
+    56
+   ],
+   "weights": [
+    "600",
+    "500",
+    "700",
+    "400"
+   ],
+   "italics": 0,
+   "pads": [
+    96,
+    0,
+    48,
+    16,
+    24,
+    12
+   ],
+   "gaps": [
+    64,
+    16,
+    0,
+    4,
+    24,
+    8
+   ],
+   "h1": [
+    56
+   ],
+   "h2": [],
+   "h3": [],
+   "h1count": 1,
+   "headerH": 64,
+   "navRows": 1,
+   "loaderVisible": false,
+   "secs": [
+    96
+   ],
+   "conts": [
+    "1280px",
+    "1280px"
+   ],
+   "heads": [
+    "Let’s work together."
+   ],
+   "overflowX": 0,
+   "bgGradients": 0,
+   "h1Info": {
+    "tt": "none",
+    "lines": 1,
+    "lhRatio": 1.1,
+    "hPct": 0.07,
+    "maxW": 560
+   },
+   "firstCardTop": null,
+   "ogImage": true,
+   "aria": 1,
+   "status": 200,
+   "errs": [],
+   "key": "contact_1440",
+   "geo": {
+    "overlaps": [],
+    "textOnMedia": [],
+    "clippedX": [],
+    "clippedY": []
+   },
+   "flatBand": 96,
+   "h1Painted": true,
+   "hidden": {
+    "stuck": [],
+    "broken": [],
+    "words": 34
+   }
+  },
+  {
+   "sizes": [
+    12,
+    14,
+    16,
+    18,
+    20,
+    28,
+    40
+   ],
+   "weights": [
+    "600",
+    "400",
+    "700"
+   ],
+   "italics": 0,
+   "pads": [
+    0,
+    64,
+    24,
+    4,
+    8,
+    16,
+    12
+   ],
+   "gaps": [
+    12,
+    24,
+    8,
+    16,
+    48,
+    4
+   ],
+   "h1": [
+    40.0006
+   ],
+   "h2": [
+    28,
+    28,
+    28
+   ],
+   "h3": [
+    20,
+    20,
+    20
+   ],
+   "h1count": 1,
+   "headerH": 56,
+   "navRows": 0,
+   "loaderVisible": false,
+   "secs": [
+    64,
+    64,
+    64,
+    64,
+    64,
+    64,
+    64
+   ],
+   "conts": [
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px"
+   ],
+   "heads": [
+    "Visual storytelling and AI workflows",
+    "Three brands. Zero NDAs.",
+    "AURA — Wellness App",
+    "NOVA — AR glasses",
+    "Flesh and Blood Venezuela",
+    "Shot composition, pacing, editorial rhythm.",
+    "Stills from the renders."
+   ],
+   "overflowX": 0,
+   "bgGradients": 0,
+   "h1Info": {
+    "tt": "none",
+    "lines": 2,
+    "lhRatio": 1.05,
+    "hPct": 0.11,
+    "maxW": 342
+   },
+   "firstCardTop": null,
+   "ogImage": true,
+   "aria": 0,
+   "status": 200,
+   "errs": [],
+   "key": "home_390",
+   "geo": {
+    "overlaps": [],
+    "textOnMedia": [],
+    "clippedX": [],
+    "clippedY": []
+   },
+   "flatBand": 74,
+   "h1Painted": true,
+   "hidden": {
+    "stuck": [],
+    "broken": [],
+    "words": 514
+   }
+  },
+  {
+   "sizes": [
+    12,
+    14,
+    16,
+    18,
+    20,
+    36
+   ],
+   "weights": [
+    "600",
+    "700",
+    "400",
+    "500"
+   ],
+   "italics": 0,
+   "pads": [
+    24,
+    0,
+    64,
+    4,
+    16,
+    12,
+    8
+   ],
+   "gaps": [
+    16,
+    8,
+    40,
+    12,
+    4
+   ],
+   "h1": [
+    36
+   ],
+   "h2": [],
+   "h3": [
+    20,
+    20,
+    20
+   ],
+   "h1count": 1,
+   "headerH": 56,
+   "navRows": 0,
+   "loaderVisible": false,
+   "secs": [
+    64,
+    64
+   ],
+   "conts": [
+    "1280px",
+    "1280px",
+    "1280px"
+   ],
+   "heads": [
+    "Selected work",
+    "AURA",
+    "NOVA",
+    "Flesh and Blood"
+   ],
+   "overflowX": 0,
+   "bgGradients": 0,
+   "h1Info": {
+    "tt": "none",
+    "lines": 1,
+    "lhRatio": 1.1,
+    "hPct": 0.05,
+    "maxW": 342
+   },
+   "firstCardTop": 380,
+   "ogImage": true,
+   "aria": 0,
+   "status": 200,
+   "errs": [],
+   "key": "work_390",
+   "geo": {
+    "overlaps": [],
+    "textOnMedia": [],
+    "clippedX": [],
+    "clippedY": []
+   },
+   "flatBand": 135,
+   "h1Painted": true,
+   "hidden": {
+    "stuck": [],
+    "broken": [],
+    "words": 123
+   }
+  },
+  {
+   "sizes": [
+    12,
+    14,
+    16,
+    18,
+    20,
+    28,
+    36
+   ],
+   "weights": [
+    "600",
+    "700",
+    "400",
+    "500"
+   ],
+   "italics": 0,
+   "pads": [
+    24,
+    0,
+    64,
+    12,
+    4,
+    8,
+    2,
+    10,
+    14,
+    16
+   ],
+   "gaps": [
+    16,
+    32,
+    12,
+    48,
+    8,
+    24,
+    4
+   ],
+   "h1": [
+    36
+   ],
+   "h2": [
+    28
+   ],
+   "h3": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+   ],
+   "h1count": 1,
+   "headerH": 56,
+   "navRows": 0,
+   "loaderVisible": false,
+   "secs": [
+    64,
+    64,
+    64,
+    64,
+    64,
+    64
+   ],
+   "conts": [
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px",
+    "1280px"
+   ],
+   "heads": [
+    "AURA wellness app",
+    "Problem",
+    "Constraint",
+    "Role",
+    "Tools",
+    "Deliverables",
+    "Decision",
+    "breathe",
+    "focus",
+    "reset",
+    "calm",
+    "Metrics",
+    "Next \\u2014 NOVA AR glasses \\u2192"
+   ],
+   "overflowX": 0,
+   "bgGradients": 0,
+   "h1Info": {
+    "tt": "none",
+    "lines": 2,
+    "lhRatio": 1.1,
+    "hPct": 0.1,
+    "maxW": 216
+   },
+   "firstCardTop": null,
+   "ogImage": true,
+   "aria": 0,
+   "status": 200,
+   "errs": [],
+   "key": "aura_390",
+   "geo": {
+    "overlaps": [],
+    "textOnMedia": [],
+    "clippedX": [],
+    "clippedY": []
+   },
+   "flatBand": 43,
+   "h1Painted": true,
+   "hidden": {
+    "stuck": [],
+    "broken": [],
+    "words": 258
+   }
+  },
+  {
+   "sizes": [
+    12,
+    14,
+    16,
+    18,
+    20,
+    36
+   ],
+   "weights": [
+    "600",
+    "700",
+    "400"
+   ],
+   "italics": 0,
+   "pads": [
+    64,
+    0,
+    24
+   ],
+   "gaps": [
+    16,
+    24,
+    12,
+    8
+   ],
+   "h1": [
+    36
+   ],
+   "h2": [],
+   "h3": [
+    20
+   ],
+   "h1count": 1,
+   "headerH": 56,
+   "navRows": 0,
+   "loaderVisible": false,
+   "secs": [
+    64
+   ],
+   "conts": [
+    "1280px",
+    "1280px"
+   ],
+   "heads": [
+    "Cinematographer and",
+    "Current toolkit"
+   ],
+   "overflowX": 0,
+   "bgGradients": 0,
+   "h1Info": {
+    "tt": "none",
+    "lines": 2,
+    "lhRatio": 1.1,
+    "hPct": 0.09,
+    "maxW": 342
+   },
+   "firstCardTop": null,
+   "ogImage": true,
+   "aria": 0,
+   "status": 200,
+   "errs": [],
+   "key": "about_390",
+   "geo": {
+    "overlaps": [],
+    "textOnMedia": [],
+    "clippedX": [],
+    "clippedY": []
+   },
+   "flatBand": 74,
+   "h1Painted": true,
+   "hidden": {
+    "stuck": [],
+    "broken": [],
+    "words": 113
+   }
+  },
+  {
+   "sizes": [
+    12,
+    14,
+    16,
+    18,
+    20,
+    28,
+    36
+   ],
+   "weights": [
+    "600",
+    "700",
+    "400"
+   ],
+   "italics": 0,
+   "pads": [
+    64,
+    0,
+    24,
+    16,
+    12
+   ],
+   "gaps": [
+    48,
+    16,
+    0,
+    4,
+    24,
+    8
+   ],
+   "h1": [
+    36
+   ],
+   "h2": [],
+   "h3": [],
+   "h1count": 1,
+   "headerH": 56,
+   "navRows": 0,
+   "loaderVisible": false,
+   "secs": [
+    64
+   ],
+   "conts": [
+    "1280px",
+    "1280px"
+   ],
+   "heads": [
+    "Let’s work together."
+   ],
+   "overflowX": 0,
+   "bgGradients": 0,
+   "h1Info": {
+    "tt": "none",
+    "lines": 1,
+    "lhRatio": 1.1,
+    "hPct": 0.05,
+    "maxW": 342
+   },
+   "firstCardTop": null,
+   "ogImage": true,
+   "aria": 0,
+   "status": 200,
+   "errs": [],
+   "key": "contact_390",
+   "geo": {
+    "overlaps": [],
+    "textOnMedia": [],
+    "clippedX": [],
+    "clippedY": []
+   },
+   "flatBand": 75,
+   "h1Painted": true,
+   "hidden": {
+    "stuck": [],
+    "broken": [],
+    "words": 34
+   }
+  }
+ ]
+}

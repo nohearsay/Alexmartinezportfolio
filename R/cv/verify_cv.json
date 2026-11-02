@@ -1,0 +1,500 @@
+{
+  "base": "http://127.0.0.1:4188",
+  "toolNames": [
+    "Alexis Martínez",
+    "Adobe Premiere Pro",
+    "After Effects",
+    "Motion Graphics",
+    "VFX supervision",
+    "Chroma Keying",
+    "HD pipeline optimization",
+    "Photoshop",
+    "Illustrator",
+    "Audition",
+    "Pro Tools",
+    "HubSpot",
+    "HubSpot SMS",
+    "Klaviyo",
+    "ActiveCampaign",
+    "GoHighLevel",
+    "Shopify",
+    "AI agent building",
+    "Workflow integration & testing",
+    "Prompt-based generation",
+    "Client journey mapping",
+    "Audience persona profiling",
+    "Marketing automation",
+    "Short-drama episode scripting",
+    "Series bible development",
+    "Conversion copywriting",
+    "Editorial review & fact-checking",
+    "Technical writing & translation",
+    "Spanish",
+    "English"
+  ],
+  "fails": [],
+  "results": {
+    "home_1440": {
+      "status": 200,
+      "errs": [],
+      "title": "Alexis Martínez · Visual Storytelling & AI Workflows",
+      "toolkitItems": [
+        "Adobe Premiere Pro",
+        "After Effects",
+        "Motion Graphics",
+        "VFX supervision",
+        "Chroma Keying",
+        "HD pipeline optimization",
+        "Photoshop",
+        "Illustrator",
+        "Audition",
+        "Pro Tools",
+        "HubSpot",
+        "HubSpot SMS",
+        "Klaviyo",
+        "ActiveCampaign",
+        "GoHighLevel",
+        "Shopify",
+        "AI agent building",
+        "Workflow integration & testing",
+        "Prompt-based generation",
+        "Client journey mapping",
+        "Audience persona profiling",
+        "Marketing automation",
+        "Short-drama episode scripting",
+        "Series bible development",
+        "Conversion copywriting",
+        "Editorial review & fact-checking",
+        "Technical writing & translation"
+      ],
+      "exempt": [
+        {
+          "tag": "div",
+          "cls": "hero__reel reveal is-in",
+          "chars": 18
+        },
+        {
+          "tag": "p",
+          "cls": "lede reveal",
+          "chars": 238
+        },
+        {
+          "tag": "div",
+          "cls": "section-head",
+          "chars": 187
+        },
+        {
+          "tag": "div",
+          "cls": "pindex",
+          "chars": 167
+        },
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 661
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 154
+    },
+    "work_1440": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "div",
+          "cls": "work-grid",
+          "chars": 346
+        },
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 49
+    },
+    "work_1440#film": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 55
+    },
+    "work_1440#narrative": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 56
+    },
+    "work_1440#prompts": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 53
+    },
+    "work_1440#growth": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 57
+    },
+    "work_1440#ops": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 53
+    },
+    "film_1440": {
+      "status": 200,
+      "errs": [],
+      "title": "Film & Post · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [],
+      "untraceable": [],
+      "textNodes": 33
+    },
+    "narrative_1440": {
+      "status": 200,
+      "errs": [],
+      "title": "Narrative & Script · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [],
+      "untraceable": [],
+      "textNodes": 35
+    },
+    "about_1440": {
+      "status": 200,
+      "errs": [],
+      "title": "About · Alexis Martínez",
+      "toolkitItems": [
+        "Adobe Premiere Pro",
+        "After Effects",
+        "Motion Graphics",
+        "VFX supervision",
+        "Chroma Keying",
+        "HD pipeline optimization",
+        "Photoshop",
+        "Illustrator",
+        "Audition",
+        "Pro Tools",
+        "HubSpot",
+        "HubSpot SMS",
+        "Klaviyo",
+        "ActiveCampaign",
+        "GoHighLevel",
+        "Shopify",
+        "AI agent building",
+        "Workflow integration & testing",
+        "Prompt-based generation",
+        "Client journey mapping",
+        "Audience persona profiling",
+        "Marketing automation",
+        "Short-drama episode scripting",
+        "Series bible development",
+        "Conversion copywriting",
+        "Editorial review & fact-checking",
+        "Technical writing & translation"
+      ],
+      "exempt": [],
+      "untraceable": [],
+      "textNodes": 69
+    },
+    "cv_1440": {
+      "status": 200,
+      "errs": [],
+      "title": "CV · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [],
+      "untraceable": [],
+      "textNodes": 69
+    },
+    "contact_1440": {
+      "status": 200,
+      "errs": [],
+      "title": "Contact · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [],
+      "untraceable": [],
+      "textNodes": 39
+    },
+    "home_390": {
+      "status": 200,
+      "errs": [],
+      "title": "Alexis Martínez · Visual Storytelling & AI Workflows",
+      "toolkitItems": [
+        "Adobe Premiere Pro",
+        "After Effects",
+        "Motion Graphics",
+        "VFX supervision",
+        "Chroma Keying",
+        "HD pipeline optimization",
+        "Photoshop",
+        "Illustrator",
+        "Audition",
+        "Pro Tools",
+        "HubSpot",
+        "HubSpot SMS",
+        "Klaviyo",
+        "ActiveCampaign",
+        "GoHighLevel",
+        "Shopify",
+        "AI agent building",
+        "Workflow integration & testing",
+        "Prompt-based generation",
+        "Client journey mapping",
+        "Audience persona profiling",
+        "Marketing automation",
+        "Short-drama episode scripting",
+        "Series bible development",
+        "Conversion copywriting",
+        "Editorial review & fact-checking",
+        "Technical writing & translation"
+      ],
+      "exempt": [
+        {
+          "tag": "div",
+          "cls": "hero__reel reveal is-in",
+          "chars": 18
+        },
+        {
+          "tag": "p",
+          "cls": "lede reveal is-in",
+          "chars": 238
+        },
+        {
+          "tag": "div",
+          "cls": "section-head",
+          "chars": 187
+        },
+        {
+          "tag": "div",
+          "cls": "pindex",
+          "chars": 167
+        },
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 661
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 148
+    },
+    "work_390": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "div",
+          "cls": "work-grid",
+          "chars": 346
+        },
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 43
+    },
+    "work_390#film": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 49
+    },
+    "work_390#narrative": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 50
+    },
+    "work_390#prompts": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 47
+    },
+    "work_390#growth": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 51
+    },
+    "work_390#ops": {
+      "status": 200,
+      "errs": [],
+      "title": "Work · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [
+        {
+          "tag": "section",
+          "cls": "section",
+          "chars": 313
+        }
+      ],
+      "untraceable": [],
+      "textNodes": 47
+    },
+    "film_390": {
+      "status": 200,
+      "errs": [],
+      "title": "Film & Post · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [],
+      "untraceable": [],
+      "textNodes": 27
+    },
+    "narrative_390": {
+      "status": 200,
+      "errs": [],
+      "title": "Narrative & Script · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [],
+      "untraceable": [],
+      "textNodes": 29
+    },
+    "about_390": {
+      "status": 200,
+      "errs": [],
+      "title": "About · Alexis Martínez",
+      "toolkitItems": [
+        "Adobe Premiere Pro",
+        "After Effects",
+        "Motion Graphics",
+        "VFX supervision",
+        "Chroma Keying",
+        "HD pipeline optimization",
+        "Photoshop",
+        "Illustrator",
+        "Audition",
+        "Pro Tools",
+        "HubSpot",
+        "HubSpot SMS",
+        "Klaviyo",
+        "ActiveCampaign",
+        "GoHighLevel",
+        "Shopify",
+        "AI agent building",
+        "Workflow integration & testing",
+        "Prompt-based generation",
+        "Client journey mapping",
+        "Audience persona profiling",
+        "Marketing automation",
+        "Short-drama episode scripting",
+        "Series bible development",
+        "Conversion copywriting",
+        "Editorial review & fact-checking",
+        "Technical writing & translation"
+      ],
+      "exempt": [],
+      "untraceable": [],
+      "textNodes": 63
+    },
+    "cv_390": {
+      "status": 200,
+      "errs": [],
+      "title": "CV · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [],
+      "untraceable": [],
+      "textNodes": 63
+    },
+    "contact_390": {
+      "status": 200,
+      "errs": [],
+      "title": "Contact · Alexis Martínez",
+      "toolkitItems": [],
+      "exempt": [],
+      "untraceable": [],
+      "textNodes": 33
+    }
+  }
+}

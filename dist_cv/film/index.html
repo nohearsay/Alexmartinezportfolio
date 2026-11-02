@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-motion="full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alexis Martínez — a cinematography degree, 8 years directing post-production at a national broadcast network, and hands-on AI workflow experience." />
+    <meta name="theme-color" content="#08080a" />
+
+    <!-- Open Graph / Twitter. The title and description are the ones the page
+         already had; the image is the showreel poster, which is the one large
+         still every deployment is guaranteed to have until a dedicated 1200x630
+         card is produced. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Alexis Martínez · Visual Storytelling &amp; AI Workflows" />
+    <meta property="og:description" content="Alexis Martínez — a cinematography degree, 8 years directing post-production at a national broadcast network, and hands-on AI workflow experience." />
+    <meta property="og:image" content="/media/showreel-poster.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>Film &amp; Post · Alexis Martínez</title>
+
+    <!-- Only self-hosted assets are preloaded: this site talks to no third party,
+         so a fonts.googleapis.com preconnect would open a connection the page
+         never uses. The showreel poster is preloaded because it is the hero's
+         LCP candidate — the mp4 itself is not. -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/RobotoFlex-wdth.woff2" crossorigin />
+    <link rel="preload" as="image" href="/media/showreel-poster.jpg" fetchpriority="high" />
+    <script>
+      /* Runs before first paint, for two reasons:
+         1. DARK IS THE DEFAULT. An explicit saved choice wins; with no saved
+            choice the page opens dark even when the OS asks for light.
+         2. MOTION MODE. html[data-motion="full"] is what hides the .reveal
+            blocks in the stylesheet, so stamping it here means the "hidden until
+            revealed" state exists before the first paint — no flash of content
+            that appears and then jumps. A reduced-motion reader gets
+            data-motion="reduced", and for them nothing is ever hidden. */
+      (function () {
+        var theme = 'dark'
+        var motion = 'full'
+        try {
+          if (window.localStorage.getItem('theme') === 'light') theme = 'light'
+        } catch (err) {
+          /* storage disabled (private mode) — keep the dark default */
+        }
+        try {
+          if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) motion = 'reduced'
+        } catch (err) {
+          /* no matchMedia — assume motion is welcome */
+        }
+        document.documentElement.setAttribute('data-theme', theme)
+        document.documentElement.setAttribute('data-motion', motion)
+      })()
+    </script>
+    <script type="module" crossorigin src="/assets/index-BbN6itgX.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-nf7bT_Uh.js">
+    <link rel="modulepreload" crossorigin href="/assets/gsap-CKWKgFWk.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DJdw8hhZ.css">
+  </head>
+  <body>
+    <!-- Pre-hydration boot shell: real content painted before a byte of
+         JavaScript runs, so the first paint is the studio mark on the site's own
+         near-black canvas instead of an empty div. React clears #root on mount
+         and components/Loader.tsx takes over from here. It is deliberately
+         generic because prerender-shell.mjs writes this same shell into every
+         route's static HTML — so it must not claim to be any particular page.
+         Styled by .boot in src/index.css. -->
+    <div id="root">
+      <div class="boot" role="presentation">
+        <span class="boot__mark">Alexis Martínez</span>
+        <span class="boot__bar" aria-hidden="true"></span>
+        <span class="boot__note">Visual storytelling and AI workflows</span>
+      </div>
+    </div>
+  </body>
+</html>
