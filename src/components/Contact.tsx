@@ -42,7 +42,8 @@ interface ContactProps {
 export const Contact = ({ level = 'h2' }: ContactProps) => {
   const rootRef = useRef<HTMLElement>(null)
   const [formData, setFormData] = useState<ContactFormData>(emptyForm)
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
+  const [errorMessage, setErrorMessage] = useState<string>('')
   useReveals(rootRef)
 
   const Tag = level
@@ -50,11 +51,29 @@ export const Contact = ({ level = 'h2' }: ContactProps) => {
   const handleSubmit = async (event: React.FormEvent): Promise<void> => {
     event.preventDefault()
     setStatus('submitting')
-    await new Promise((resolve) => setTimeout(resolve, 350))
-    console.warn('Contact form is a placeholder — no endpoint is configured, so nothing was sent.')
-    setStatus('success')
-    setFormData(emptyForm)
-    window.setTimeout(() => setStatus('idle'), 4000)
+    setErrorMessage('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Submission failed')
+      }
+
+      setStatus('success')
+      setFormData(emptyForm)
+      window.setTimeout(() => setStatus('idle'), 5000)
+    } catch (err) {
+      setStatus('error')
+      setErrorMessage(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+      window.setTimeout(() => setStatus('idle'), 5000)
+    }
   }
 
   const handleChange = (
@@ -143,10 +162,12 @@ export const Contact = ({ level = 'h2' }: ContactProps) => {
               </svg>
             </button>
             <p className="contact__note" role="status">
-              {status === "success"
-                ? "This is a static export with no form endpoint — nothing left the browser. Wire it to your provider of choice before launch."
-                : "Static export: submissions are staged locally and are not transmitted."}
-            </p>
+                          {status === "success"
+                            ? "Message sent successfully — I'll get back to you soon."
+                            : status === "error"
+                            ? errorMessage
+                            : "Static export: submissions are sent via Cloudflare Pages Functions."}
+                        </p>
           </form>
         </div>
       </div>
